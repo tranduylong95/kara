@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phần mềm karaoke</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <script  src="js/icoin.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+</head>
+<body style="background-color: #00b8ff2b;">
+	<div class="head-title" >
+	   <nav>
+	   	 <ul class="nav">
+	   	 	<li  class="">
+	   	 		<a class="link-h1 pd-2 d-block">
+	   	 		  <i class="fa fa-dashboard"></i>
+	   	 		  Tổng quan
+	   	 	    </a>
+	   	 	</li>
+	   	 	<li class="">
+	   	 		<a class="link-h1 pd-2 d-block" >
+		   	 		<i class="fa fa-cubes"></i>
+		   	 		 Hàng Hóa
+		   	 		 <i class="fa fa-caret-down"></i>
+	   	 	    </a>
+	   	 	     <div class=""style=" z-index: 10000;position: absolute;">
+						   	    <ul class="list-group">
+								    <li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		<i class="fa fa-cube"></i>
+									  		Danh sách sản phẩm
+									  	</a>
+								  	</li>
+								  	 <li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		<i class="fas fa-project-diagram"></i>
+									  		Bảng Giá
+									  	</a>
+								  	</li>
+								  	 <li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		<i class="fa fas fa-file-alt"></i>
+									  		Quản lý nhập hàng
+									  	</a>
+								  	</li>
+								  	<li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		<i class="fa fa-male"></i>
+									  		Quản lý chuyển kho
+									  	</a>
+								  	</li>
+								  	<li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		<i class="fa fa-check-square-o"></i>
+									  		Quản lý kiểm hàng
+									  	</a>
+								  	</li>
+								  	<li class="list-group-item" >
+									  	<a href="" class="link-h1">
+									  		Danh sách xuất trả
+									  	</a>
+								  	</li>
+								</ul>
+				</div>
+	   	 	</li>
+	   	 	<li >
+	   	 		<a class="link-h1 pd-2 d-block">
+		   	 		Quản lý khu vực
+		   	 		<i class="fa fa-caret-down"></i>
+	   	 	    </a>
+	   	 	</li>
+	   	 	<li >
+	   	 		<a class="link-h1 pd-2 d-block">
+                   <i class="fa fa-bar-chart"></i>
+	   	 		   Báo Cáo
+	   	 	    </a>
+	   	 	</li>
+
+	   	 </ul>
+	   </nav>	
+	</div>
+	<div class="container-fluid" >
+		<div class="content-h1">
+			<div class="row">
+				<div class="col-lg-3 mr-t1" >
+					<div class="list-bs-1" >
+						<i class="fa fa-tags btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">ĐƠN HÀNG</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1">
+						<i class="fa fa-cart-arrow-down btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">DOANH THU TRONG NGÀY</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1">
+						<i class="fa fa-money btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">TIỀN GIỜ</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1" >
+						<i class="fa fa-money btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">TIỀN HÀNG HÓA</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1" >
+						<i class="fa fa-reply btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">HỦY TRẢ ĐỒ</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1" >
+						<i class="fa fa-reply-all btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">GÍA TRỊ TRẢ LẠI</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1" >
+						<i class="fa fa-money btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">0</span>
+						<span class="dg-3">CHIẾT KHẤU</span>
+					</div>
+				</div>
+				<div class="col-lg-3 mr-t1">
+					<div class="list-bs-1" >
+						<i class="fa fa-crosshairs btn btn-w2"  style="margin-right: 10px; font-size: 24px; height:50px;float: left; background-color: blue; color: #fff"></i>
+						<span class ="dg-2">1/30</span>
+						<span class="dg-3">BÀN SỬ DỤNG</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top: 10px;">
+			<div class="row">
+				<div class="col-lg-9">
+					<canvas id="bar-chart"  style="height: 240px; background-color: #fff;"></canvas>
+				</div>
+				<div class="col-lg-3">
+					<div class="hotline pd-1" >
+						    <div style="display: inline-block;">
+								<span class="dg-3" style="display: inline; color: #2980b9">HOTLINE :</span> 
+								<span class="dg-3" style="display: inline; color: red;">1900 4515</span>
+						    </div>
+							<i class="fa fa-phone-square " style="color: #2980b9; font-size: 1.5em; float: right;"></i>
+					</div>
+					<div class="history">
+						<span class="dg-3" style="color: #2980b9">HOẠT ĐỘNG GẦN ĐÂY</span>
+						<div class="flex-1 history-sl"  >
+							<span class="fa fa-cart-arrow-down bs"></span>
+							<div>
+								<span style="font-weight: 600 ;color: #2980b9;font-size: 18px;">Admin</span>
+								<span>admin da thauy doi gia tien 2500 thanh 25000 </span>
+						    </div>
+						    <div class="time-history">
+						    	<i class="fa fa-clock-o" style="color: color: #878787;"></i>
+						    	<span style="color: #878787;">17 ngày trước</span>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer" style="width: 100%; height: 100px; background-color: red;">
+		
+	</div>
+</body>
+<script type="text/javascript">
+
+ var x=	new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["15/11", "16/11", "17/11", "18/11", "19/11" ,"Africa"],
+      datasets: [
+        {
+          label: "Số Lương",
+          backgroundColor: ["#3e95cd", "#3e95cd","#3e95cd","#3e95cd","#3e95cd","#3e95cd"],
+          data: [20,200,734,784,433,210]
+        }
+      ]
+    },
+    options: {
+      legend: { 
+      	display: false,
+      	width:120,
+      },
+      title: {
+        display: true,
+        text: 'Sản phẩm bán chạy nhất trong 10 ngày'
+      },
+     reponsive:false,
+    }
+});
+
+
+</script>
+</html>

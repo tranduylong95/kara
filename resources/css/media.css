@@ -1,0 +1,87 @@
+@media screen and (max-width: 992px) {
+
+.nav-bar{
+ float: left;
+ margin-top: 10px;
+ }
+ .item-w1{
+ 	display: none;
+ }
+ .item-w1:last-child{
+    display: block;
+ }
+.bill-tg .mr-1{
+	width: 100%;
+	margin-top: 10px;
+ }
+ .bill-tg{
+ 	display: block;
+ }
+ .mr-1{
+ 	margin:0px;
+ }
+ body {
+ 	overflow: scroll!important;
+ }
+ .deltail-bill{
+	max-height: 300px;
+	height: auto;
+ }
+ .deltail-bill-1{
+ 	max-height: 800px;
+	height: auto;
+ }
+ .deltail-bill-1 .pd-right-0{
+ 	padding-right: 10px;
+ }
+ .hidden{
+ 	display: none;
+ }
+ .over-bill{
+ 	height: auto;
+ }
+}
+
+body{
+	
+}
+/* width */
+::-webkit-scrollbar  {
+   width: 10px;	
+   overflow: hidden;
+   height: 10px;
+
+   
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@media (min-width: 992px) {
+	
+	.form-inline .form-control{
+	 display: inline-block;
+	 width: auto;
+	 font-size: 14px;
+	}
+	.form-inline .form-group{
+		display: inline-block;
+	}
+	.form-group button{
+	  font-size: 14px;
+	  vertical-align: baseline;
+	}
+}
